@@ -42,4 +42,9 @@ function sortingHat(houses) {
     var house = data.apiUrl.sortingHatPath;
 
     $(".sortinghat").append(houses);
+    setTimeout(sortingHat, 10);
 }
+
+function sortingHat() {
+    myWindow.resizeTo(250, 250);                             // Resizes the new window
+    myWindow.focus(); 
