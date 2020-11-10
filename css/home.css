@@ -10,7 +10,7 @@ body {
     flex : 100vh;
     margin: 0;
     font-family: Harry;
-    color: silver;
+    color: white;
 }
 button{
     background-image: url('./Pictures/sorting hat.png');
