@@ -1,5 +1,5 @@
 body {
-    background-color:;
+   /* background-color:;*/
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -7,19 +7,11 @@ body {
     margin: 0;
 }
 .topnav {
-    font-family: harry;
-    src : url('./font/ParryHotter.ttf');
+    background-image: url('/css/Pictures/HARRY-POTTER-BANNER.png');
     padding: 25px;
     text-align: center;
-    background-color: grey;
 }
-.body {
-    background-image: url("./Pictures/logo.png");
-    opacity: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    flex: 100vh;
-}
+
 .popup {
     position: center;
     display: inline-block;
@@ -61,7 +53,7 @@ body {
     animation: fadeIn 1s
   }
   
-  /* Add animation (fade in the popup) */
+ /*  Add animation (fade in the popup) */
   @-webkit-keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}

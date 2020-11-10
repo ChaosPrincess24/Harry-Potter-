@@ -9,7 +9,7 @@ var apiKey = '$2a$10$jBnqiABzFBpt6e1Pc0y3POmMcwde52laEMC4GGuMPSpdXiA4l5GGC'
 
 var queryString = '?key=' + apiKey;
 
-var resourceUrl = apiUrl + characterPath + queryString;
+var resourceUrl = apiUrl + sortinghatPath + queryString;
 
 async function getCharacters() {
     var response = await fetch(resourceUrl);
@@ -42,4 +42,9 @@ function sortingHat(houses) {
     var house = data.apiUrl.sortingHatPath;
 
     $(".sortinghat").append(houses);
+    setTimeout(sortingHat, 10);
 }
+
+function sort() {
+    myWindow.resizeTo(250, 250);                             // Resizes the new window
+    myWindow.focus(); 
