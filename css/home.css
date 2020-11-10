@@ -9,8 +9,6 @@ body {
     flex-direction: column;
     flex : 100vh;
     margin: 0;
-    font-family: Harry;
-    color: white;
 }
 button{
     background-image: url('./Pictures/sorting hat.png');
@@ -25,7 +23,6 @@ button{
     image-resolution: 50px 50px;
     display: inline;
     padding: 25px;
-    text-align: center;
     height: 500px;
 }
 
@@ -81,6 +78,26 @@ button{
     to {opacity:1 ;}
   }
 
-  .Icon{
-    height: 50px;
+  h1{
+    font-family: Harry;
+  }
+
+  p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .Gryffindor{
+    color: darkred;
+  }
+
+  .Hufflepuff{
+    color: gold;
+  }
+
+  .Ravenclaw{
+    color: navy;
+  }
+
+  .Slytherin{
+    color: green;
   }

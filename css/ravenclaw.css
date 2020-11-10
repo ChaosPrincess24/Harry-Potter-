@@ -1,4 +1,25 @@
+@font-face {
+    font-family: Harry;
+    src: url(./font/HarryPotter-ov4z.ttf)
+}
 body {
     background-color:#0e1a40;
-    font : bold
+    font-family: Harry;
+    color: white;
 }
+
+.Gryffindor{
+    color: darkred;
+  }
+
+  .Hufflepuff{
+    color: gold;
+  }
+
+  .Ravenclaw{
+    color: navy;
+  }
+
+  .Slytherin{
+    color: green;
+  }
