@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 .topnav {
-    background-image: url('/css/Pictures/HARRY-POTTER-BANNER.png');
+   /* background-image: url('/css/Pictures/HARRY-POTTER-BANNER.png'); */
     padding: 25px;
     text-align: center;
 }
