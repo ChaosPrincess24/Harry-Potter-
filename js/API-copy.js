@@ -10,7 +10,7 @@ function formResourcePath(path) {
     return apiUrl + path + '?key=' + apiKey;
 }
 
-async function getResourceFromAPI(path, callback) {
+async function getResourceFromAPI(path) {
     var response = await fetch(path);
     var data = await response.json();
     return data;
