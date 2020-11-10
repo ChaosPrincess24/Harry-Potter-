@@ -1,15 +1,32 @@
+@font-face {
+    font-family: Harry;
+    src: url(./font/HarryPotter-ov4z.ttf)
+}
 body {
-   /* background-color:;*/
-    background-repeat: no-repeat;
+    background-image: url("./Pictures/background.jpg");
     background-position: center;
     display: flex;
     flex-direction: column;
+    flex : 100vh;
     margin: 0;
+    font-family: Harry;
+    color: silver;
+}
+button{
+    background-image: url('./Pictures/sorting hat.png');
+    color: silver;
+    text-shadow: white;
+    border: 4px double silver;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
 }
 .topnav {
-   /* background-image: url('/css/Pictures/HARRY-POTTER-BANNER.png'); */
+    image-resolution: 50px 50px;
+    display: inline;
     padding: 25px;
     text-align: center;
+    height: 500px;
 }
 
 .popup {
@@ -62,4 +79,8 @@ body {
   @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
+  }
+
+  .Icon{
+    height: 50px;
   }

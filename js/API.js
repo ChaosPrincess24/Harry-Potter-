@@ -48,3 +48,4 @@ function sortingHat(houses) {
 function sort() {
     myWindow.resizeTo(250, 250);                             // Resizes the new window
     myWindow.focus(); 
+}
