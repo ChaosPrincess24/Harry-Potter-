@@ -1,63 +1,67 @@
 @font-face {
-    font-family: Harry;
-    src: url(./font/HarryPotter-ov4z.ttf)
+  font-family: Harry;
+  src: url(./font/HarryPotter-ov4z.ttf);
 }
+
 body {
-   /* background-image: url("./Pictures/background.jpg");*/
-   background-color: black;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    flex : 100vh;
-    margin: 0;
+  /* background-image: url("./Pictures/background.jpg");*/
+  background-color: black;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  flex: 100vh;
+  margin: 0;
 }
-.btn.btn-primary{
+
+.btn.btn-primary {
   background: transparent;
   border: none;
 }
-.topnav {
-    position: relative;
 
- }
- .modal-dialog {
+.topnav {
+  position: relative;
+}
+
+.modal-dialog {
   -webkit-border-radius: 0px !important;
   -moz-border-radius: 0px !important;
   border-radius: 0px !important;
   text-align: center;
   position: relative;
 }
- img{
-   max-width: 100%;
-   height: auto;
- }
 
- .nav{
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav {
   background-color: black;
   text-align: center;
   font-family: Harry;
   font-size: xx-large;
- }
+}
 
-  h1{
-    font-family: Harry;
-  }
+h1 {
+  font-family: Harry;
+}
 
-  p{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
+p {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
 
-  .Gryffindor{
-    color: darkred;
-  }
+.Gryffindor {
+  color: darkred;
+}
 
-  .Hufflepuff{
-    color: gold;
-  }
+.Hufflepuff {
+  color: gold;
+}
 
-  .Ravenclaw{
-    color: navy;
-  }
+.Ravenclaw {
+  color: navy;
+}
 
-  .Slytherin{
-    color: green;
-  }
+.Slytherin {
+  color: green;
+}

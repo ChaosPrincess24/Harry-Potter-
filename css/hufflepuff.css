@@ -1,35 +1,38 @@
 @font-face {
-    font-family: Harry;
-    src: url(./font/HarryPotter-ov4z.ttf)
+  font-family: Harry;
+  src: url(./font/HarryPotter-ov4z.ttf);
 }
+
 body {
-    background-color: #ecb939;
-    font-family: Harry;
-    color: white;
+  background-color: #ecb939;
+  font-family: Harry;
+  color: white;
 }
-h1{
+
+h1 {
   font-family: Harry;
   text-align: center;
 }
 
-p{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
   width: fit-content;
 }
 
-.Gryffindor{
-    color: darkred;
-  }
+.Gryffindor {
+  color: darkred;
+}
 
-  .Hufflepuff{
-    color: gold;
-  }
+.Hufflepuff {
+  color: gold;
+}
 
-  .Ravenclaw{
-    color: navy;
-  }
+.Ravenclaw {
+  color: navy;
+}
 
-  .Slytherin{
-    color: green;
-  }
+.Slytherin {
+  color: green;
+}
