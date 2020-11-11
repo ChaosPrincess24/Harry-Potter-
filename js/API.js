@@ -6,8 +6,15 @@ var sortingHatPath = '/sortingHat';
 var housesPath = '/houses';
 var spellsPath = '/spells';
 
-function formResourcePath(path) {
-    return apiUrl + path + '?key=' + apiKey;
+function formResourcePath(path, queryParams) {
+    var url = apiUrl + path;
+    var parmas = '?key=' + apiKey;
+
+    if (queryParams) {
+        params = parmas + '&' + queryParams;
+    }
+
+    return  url + params;
 }
 
 /*async function getResourceFromAPI(path) {
@@ -37,6 +44,16 @@ async function getCharacters() {
     }
 }
 
+async function getCharactersByHouse(house) {
+    var queryParams = 'house=' + house;
+    var response = await fetch(formResourcePath(characterPath, queryParams));
+    var data = await response.json();
+    if (response.ok) {
+        formatCharacters(data);
+        return data;
+    }
+}
+
 function formatCharacters(characters) {
     var chars = document.createElement('ul');
     characters.forEach(function (character) {
@@ -44,12 +61,6 @@ function formatCharacters(characters) {
         var charName = document.createElement('span');
         charName.innerText = character.name;
         charContainer.appendChild(charName);
-        if (character.house) {
-            var charHouse = document.createElement('div');
-            charHouse.classList.add('house');
-            charHouse.innerText = character.house;
-            charContainer.appendChild(charHouse);
-        }
         chars.appendChild(charContainer);
     });
     document.body.appendChild(chars);
