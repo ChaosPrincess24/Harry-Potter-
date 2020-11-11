@@ -1,51 +1,44 @@
 var apiUrl = 'https://www.potterapi.com/v1';
+var apiKey = '$2a$10$jBnqiABzFBpt6e1Pc0y3POmMcwde52laEMC4GGuMPSpdXiA4l5GGC';
 
 var characterPath = '/characters';
 var sortingHatPath = '/sortingHat';
 var housesPath = '/houses';
 var spellsPath = '/spells';
 
-var apiKey = '$2a$10$jBnqiABzFBpt6e1Pc0y3POmMcwde52laEMC4GGuMPSpdXiA4l5GGC'
+function formResourcePath(path) {
+    return apiUrl + path + '?key=' + apiKey;
+}
 
-var queryString = '?key=' + apiKey;
-
-var resourceUrl = apiUrl + sortinghatPath + queryString;
-
-async function getCharacters() {
-    var response = await fetch(resourceUrl);
+async function getResourceFromAPI(path) {
+    var response = await fetch(path);
     var data = await response.json();
-    if (response.ok) {
-        formatCharacters(data);
-        return data;
-    }
+    return data;
 }
 
-function formatCharacters(characters) {
-    var chars = document.createElement('ul');
-    characters.forEach(function(character) {
-        var charContainer = document.createElement('li');
-        var charName = document.createElement('span');
-        charName.innerText = character.name;
-        charContainer.appendChild(charName);
-        if (character.house) {
-            var charHouse = document.createElement('div');
-            charHouse.classList.add('house');
-            charHouse.innerText = character.house;
-            charContainer.appendChild(charHouse);
+function getGryffindor() {
+    var resourceUrl = formResourcePath(characterPath);
+    getResourceFromAPI(resourceUrl).then(function(characters) {
+        
+     /*   var modalContent = document.querySelector('.modal-content')
+        if (house === 'Slytherin') {
+            modalContent.style.backgroundColor = "green";
         }
-        chars.appendChild(charContainer);
+        else if (house === 'Hufflepuff') {
+            modalContent.style.backgroundColor = "yellow";
+        }
+        else if (house === 'Gryffindor') {
+            modalContent.style.backgroundColor = "red";
+        }
+        else if (house === 'Ravenclaw') {
+            modalContent.style.backgroundColor = "blue";
+        }
+        displaySortingHatAnswer(house);
     });
-    document.body.appendChild(chars);
 }
 
-function sortingHat(houses) {
-    var house = data.apiUrl.sortingHatPath;
-
-    $(".sortinghat").append(houses);
-    setTimeout(sortingHat, 10);
-}
-
-function sort() {
-    myWindow.resizeTo(250, 250);                             // Resizes the new window
-    myWindow.focus(); 
-}
+function displaySortingHatAnswer(house) {
+    $('#exampleModal').modal('show');
+    var modalBody = $('.modal-body');
+    modalBody.text(house);
+}*/

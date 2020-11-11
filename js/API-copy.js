@@ -19,11 +19,26 @@ async function getResourceFromAPI(path) {
 function getSortingHat() {
     var resourceUrl = formResourcePath(sortingHatPath);
     getResourceFromAPI(resourceUrl).then(function(house) {
-        // Here is where you would show your data
+        
+        var modalContent = document.querySelector('.modal-content')
+        if (house === 'Slytherin') {
+            modalContent.style.backgroundColor = "green";
+        }
+        else if (house === 'Hufflepuff') {
+            modalContent.style.backgroundColor = "gold";
+        }
+        else if (house === 'Gryffindor') {
+            modalContent.style.backgroundColor = "darkred";
+        }
+        else if (house === 'Ravenclaw') {
+            modalContent.style.backgroundColor = "navy";
+        }
         displaySortingHatAnswer(house);
     });
 }
 
 function displaySortingHatAnswer(house) {
-    alert(house);
+    $('#exampleModal').modal('show');
+    var modalBody = $('.modal-body');
+    modalBody.text(house);
 }

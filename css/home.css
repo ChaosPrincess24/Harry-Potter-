@@ -10,20 +10,20 @@ body {
     flex : 100vh;
     margin: 0;
 }
-button{
-    background-image: url('./Pictures/sorting hat.png');
-    color: silver;
-    text-shadow: white;
-    border: 4px double silver;
-    text-align: center;
-    display: inline-block;
-    width: 200px;
+.btn.btn-primary{
+  background: transparent;
+  border: none;
+}
+.selector-for-some-widget {
+  box-sizing: content-box;
 }
 .topnav {
-    image-resolution: 50px 50px;
-    display: inline;
-    padding: 25px;
-    height: 500px;
+    padding-top: 10;
+    position: relative;
+    background-color: black;
+    text-align: center;
+    font-family: Harry;
+    font-size: xx-large;
 }
 
 .popup {
