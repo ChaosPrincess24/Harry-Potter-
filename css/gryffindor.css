@@ -5,10 +5,20 @@
 body {
     background-color: #ae0001;
     font-size: large;
+    font-family: Harry;
 }
 h1{
     font-family: Harry;
     text-align: center;
+  }
+  .header{
+    display: inline-block;
+  }
+  .banner{
+    display: inline-block;
+  }
+  .nav{
+    display: block;
   }
 
   p{

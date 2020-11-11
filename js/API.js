@@ -10,26 +10,8 @@ function formResourcePath(path) {
     return apiUrl + path + '?key=' + apiKey;
 }
 
-/*async function getResourceFromAPI(path) {
-    var response = await fetch(path);
-    var data = await response.json();
-    return data;
-}*/
-
-/*function getGryffindor() {
-    var resourceUrl = formResourcePath(characterPath);
-    getResourceFromAPI(resourceUrl).then(function(characters) {
-
-        if (house === 'Gryffindor'){
-            return ()
-        }
-        else{
-            return
-        }
-    }*/
-
-    async function getCharacters() {
-        var response = await fetch(formResourcePath);
+async function getCharacters() {
+        var response = await fetch(formResourcePath('/characters'));
         var data = await response.json();
         if (response.ok) {
             formatCharacters(data);
