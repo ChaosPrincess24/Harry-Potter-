@@ -17,6 +17,8 @@
     <header>
         <div class="topnav">
             <img class="navimg" src="css/Pictures/harrypotterlogo.png" />
+        </div>
+        <div class="nav">
             <a href="Home.html">Hogwarts</a>
             <a href="Gryffindor.html" class="Gryffindor">Gryffindor</a>
             <a href="Hufflepuff.html" class="Hufflepuff">Hufflepuff</a>
@@ -25,26 +27,38 @@
         </div>
     </header>
 
+    <div class="card" style="width: 18rem;">
+        <img src="./css/Pictures/DiagonAlley.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Diagon Alley</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./css/Pictures/Forbidden Forest.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dark Forest</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" onclick="getSortingHat()" >
         <img src="./css/Pictures/sorting hat.png" />
     </button>
 
-
-
     <footer>
         <div class='icon'>
             <a href="https://www.wizardingworld.com/">
-                <img src='./css/Pictures/harry-potter-logo-harry-potter-symbol-meaning-history-and-evolution-851041.png'
-                    height="50px" width="100px" /></a>
+                <img src='./css/Pictures/harry-potter-logo-harry-potter-symbol-meaning-history-and-evolution-851041.png'/></a>
             <a href="https://www.facebook.com/harrypottermovie">
-                <img src='./css/Pictures/pm-on-facebook-diamond-painting-in-facebook-facebook-164370.png' height="50px"
-                    width="75px" /></a>
+                <img src='./css/Pictures/pm-on-facebook-diamond-painting-in-facebook-facebook-164370.png'/></a>
             </a>
             <a href="https://www.instagram.com/harrypotterfilm/">
-                <img src='./css/Pictures/instagram-png-instagram-png-logo-164886.png' height="30px" width="30px" /></a>
+                <img src='./css/Pictures/instagram-png-instagram-png-logo-164886.png'/></a>
             <a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ">
-                <img src='./css/Pictures/youtube.png' height="75px" width="100px" /></a>
+                <img src='./css/Pictures/youtube.png'/></a>
         </div>
     </footer>
 
@@ -53,21 +67,17 @@
 
 
     <!-- Modal -->
-    <div class="modal-dialog modal-dialog-centered">
+   <!-- Vertically centered modal -->
+<div class="modal-dialog modal-dialog-centered">
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-body">
                         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">Close
                             <span aria-hidden="true">&times;</span>
                         </button>
-                    </div>
-                    <div class="modal-body">
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"></button>
                     </div>
                 </div>
             </div>
@@ -82,6 +92,6 @@
         crossorigin="anonymous"></script>
 
     <script src="js/API-copy.js"></script>
-    <script src="js/Main.js"></script>
+    <!--<script src="js/Main.js"></script>-->
 
 </body>

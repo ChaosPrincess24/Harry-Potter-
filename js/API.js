@@ -10,35 +10,53 @@ function formResourcePath(path) {
     return apiUrl + path + '?key=' + apiKey;
 }
 
-async function getResourceFromAPI(path) {
+/*async function getResourceFromAPI(path) {
     var response = await fetch(path);
     var data = await response.json();
     return data;
-}
+}*/
 
-function getGryffindor() {
+/*function getGryffindor() {
     var resourceUrl = formResourcePath(characterPath);
     getResourceFromAPI(resourceUrl).then(function(characters) {
-        
-     /*   var modalContent = document.querySelector('.modal-content')
-        if (house === 'Slytherin') {
-            modalContent.style.backgroundColor = "green";
-        }
-        else if (house === 'Hufflepuff') {
-            modalContent.style.backgroundColor = "yellow";
-        }
-        else if (house === 'Gryffindor') {
-            modalContent.style.backgroundColor = "red";
-        }
-        else if (house === 'Ravenclaw') {
-            modalContent.style.backgroundColor = "blue";
-        }
-        displaySortingHatAnswer(house);
-    });
-}
 
-function displaySortingHatAnswer(house) {
+        if (house === 'Gryffindor'){
+            return ()
+        }
+        else{
+            return
+        }
+    }*/
+
+    async function getCharacters() {
+        var response = await fetch(formResourcePath);
+        var data = await response.json();
+        if (response.ok) {
+            formatCharacters(data);
+            return data;
+        }
+    }
+
+    function formatCharacters(characters) {
+        var chars = document.createElement('ul');
+        characters.forEach(function(character) {
+            var charContainer = document.createElement('li');
+            var charName = document.createElement('span');
+            charName.innerText = character.name;
+            charContainer.appendChild(charName);
+            if (character.house) {
+                var charHouse = document.createElement('div');
+                charHouse.classList.add('house');
+                charHouse.innerText = character.house;
+                charContainer.appendChild(charHouse);
+            }
+            chars.appendChild(charContainer);
+        });
+        document.body.appendChild(chars);
+    }
+     
+/*function displaySortingHatAnswer(house) {
     $('#exampleModal').modal('show');
     var modalBody = $('.modal-body');
-    modalBody.text(house);
+    modalBody.text(characters);
 }*/

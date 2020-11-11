@@ -3,7 +3,8 @@
     src: url(./font/HarryPotter-ov4z.ttf)
 }
 body {
-    background-image: url("./Pictures/background.jpg");
+   /* background-image: url("./Pictures/background.jpg");*/
+   background-color: black;
     background-position: center;
     display: flex;
     flex-direction: column;
@@ -14,69 +15,28 @@ body {
   background: transparent;
   border: none;
 }
-.selector-for-some-widget {
-  box-sizing: content-box;
-}
 .topnav {
-    padding-top: 10;
     position: relative;
-    background-color: black;
-    text-align: center;
-    font-family: Harry;
-    font-size: xx-large;
+
+ }
+ .modal-dialog {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+  text-align: center;
+  position: relative;
 }
+ img{
+   max-width: 100%;
+   height: auto;
+ }
 
-.popup {
-    position: center;
-    display: inline-block;
-    cursor: pointer;
-  }
-
-/* The actual popup (appears on top) */
-.popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: center;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-  }
-  
- /*  Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  }
+ .nav{
+  background-color: black;
+  text-align: center;
+  font-family: Harry;
+  font-size: xx-large;
+ }
 
   h1{
     font-family: Harry;
