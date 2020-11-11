@@ -28,33 +28,33 @@ function formResourcePath(path) {
         }
     }*/
 
-    async function getCharacters() {
-        var response = await fetch(formResourcePath);
-        var data = await response.json();
-        if (response.ok) {
-            formatCharacters(data);
-            return data;
-        }
+async function getCharacters() {
+    var response = await fetch(formResourcePath(characterPath));
+    var data = await response.json();
+    if (response.ok) {
+        formatCharacters(data);
+        return data;
     }
+}
 
-    function formatCharacters(characters) {
-        var chars = document.createElement('ul');
-        characters.forEach(function(character) {
-            var charContainer = document.createElement('li');
-            var charName = document.createElement('span');
-            charName.innerText = character.name;
-            charContainer.appendChild(charName);
-            if (character.house) {
-                var charHouse = document.createElement('div');
-                charHouse.classList.add('house');
-                charHouse.innerText = character.house;
-                charContainer.appendChild(charHouse);
-            }
-            chars.appendChild(charContainer);
-        });
-        document.body.appendChild(chars);
-    }
-     
+function formatCharacters(characters) {
+    var chars = document.createElement('ul');
+    characters.forEach(function (character) {
+        var charContainer = document.createElement('li');
+        var charName = document.createElement('span');
+        charName.innerText = character.name;
+        charContainer.appendChild(charName);
+        if (character.house) {
+            var charHouse = document.createElement('div');
+            charHouse.classList.add('house');
+            charHouse.innerText = character.house;
+            charContainer.appendChild(charHouse);
+        }
+        chars.appendChild(charContainer);
+    });
+    document.body.appendChild(chars);
+}
+
 /*function displaySortingHatAnswer(house) {
     $('#exampleModal').modal('show');
     var modalBody = $('.modal-body');
