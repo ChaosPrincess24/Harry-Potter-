@@ -17,6 +17,22 @@ function formResourcePath(path, queryParams) {
     return  url + params;
 }
 
+function formResourcePathLikeABoss(path, queryParamObject) {
+    // queryParamObject = {
+    //     house: 'Gryffindor'
+    // }
+
+    var url = new URL(apiUrl + path);
+    url.searchParams.append('key', apiKey);
+    
+    Object.keys(queryParamObject).forEach((key) => {
+        var value = queryParamObject[key];
+        url.searchParams.append(key, value);
+    })
+
+    return url.href;
+}
+
 /*async function getResourceFromAPI(path) {
     var response = await fetch(path);
     var data = await response.json();
