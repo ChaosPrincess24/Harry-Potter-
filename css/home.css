@@ -50,6 +50,40 @@ p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+/* Modal Header */
+.modal-header {
+  border: none;
+  color: white;
+}
+
+.modal-content {
+  align-items: center;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  font-weight: bolder;
+  font-family: Harry;
+  font-size: 28px;
+  color: black;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  color: white;
+  border: none;
+}
+
+.btn.btn-secondary {
+  color: white;
+  float: right;
+  background-color: black;
+}
+
+h5{
+  display: inline;
+}
+
 .Gryffindor {
   color: darkred;
 }
