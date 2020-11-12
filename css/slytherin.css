@@ -5,13 +5,27 @@
 
 body {
   background-color: #1a472a;
+  background-position: center;
+  display: flex;
   font-family: Harry;
-  color: white;
+  font-size: xx-large;
+  text-align: center;
+  flex-direction: column;
+  flex: 100vh;
+  margin: 0;
+}
+
+.banner{
+  height: max-content;
 }
 
 h1 {
-  font-family: Harry;
-  text-align: center;
+font-family: Harry;
+text-align: center;
+}
+
+.nav{
+display: inline-flex;
 }
 
 p {

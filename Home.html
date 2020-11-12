@@ -15,53 +15,62 @@
 
 <body>
     <header>
-        <div class="topnav">
-            <img class="navimg" src="css/Pictures/harrypotterlogo.png" />
+      <nav>
+        <div class="banner">
+            <img src="css/Pictures/harrypotterlogo.png" />
         </div>
-        <div class="nav">
             <a href="Home.html">Hogwarts</a>
             <a href="Gryffindor.html" class="Gryffindor">Gryffindor</a>
             <a href="Hufflepuff.html" class="Hufflepuff">Hufflepuff</a>
             <a href="Ravenclaw.html" class="Ravenclaw">Ravenclaw</a>
             <a href="Slytherin.html" class="Slytherin">Slytherin</a>
-        </div>
+        </nav>
     </header>
 
-    <div class="card" style="width: 18rem;">
-        <img src="./css/Pictures/DiagonAlley.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Diagon Alley</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+    <div class="row">
+      <div class="col-12 col-lg-6">
+          <div class="card">
+              <img src="./css/Pictures/DiagonAlley.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Diagon Alley</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+              </div>
+          </div>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="./css/Pictures/Forbidden Forest.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Dark Forest</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+      <div class="col-12 col-lg-6">
+          <div class="card">
+              <img src="./css/Pictures/Forbidden Forest.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Dark Forest</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+              </div>
+          </div>
       </div>
+  </div>
 
-
+  <div class="d-flex justify-content-center"></div>
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" onclick="getSortingHat()" >
         <img src="./css/Pictures/sorting hat.png" />
     </button>
+    </div>
 
     <footer>
-        <div class='icon'>
-            <a href="https://www.wizardingworld.com/">
-                <img src='./css/Pictures/harry-potter-logo-harry-potter-symbol-meaning-history-and-evolution-851041.png'/></a>
-            <a href="https://www.facebook.com/harrypottermovie">
-                <img src='./css/Pictures/pm-on-facebook-diamond-painting-in-facebook-facebook-164370.png'/></a>
-            </a>
-            <a href="https://www.instagram.com/harrypotterfilm/">
-                <img src='./css/Pictures/instagram-png-instagram-png-logo-164886.png'/></a>
-            <a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ">
-                <img src='./css/Pictures/youtube.png'/></a>
-        </div>
-    </footer>
-
+      <div class="d-flex justify-content-center align-items-center">
+          <a class="d-block" href="https://www.wizardingworld.com/">
+              <img class="img-fluid"
+                  src='./css/Pictures/harry-potter-logo-harry-potter-symbol-meaning-history-and-evolution-851041.png' /></a>
+          <a class="d-block" href="https://www.facebook.com/harrypottermovie">
+              <img class="img-fluid" src='./css/Pictures/pm-on-facebook-diamond-painting-in-facebook-facebook-164370.png' /></a>
+          </a>
+          <a class="d-block" href="https://www.instagram.com/harrypotterfilm/">
+              <img class="img-fluid" src='./css/Pictures/instagram-png-instagram-png-logo-164886.png' /></a>
+          <a class="d-block" href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ">
+              <img class="img-fluid" src='./css/Pictures/youtube.png' /></a>
+      </div>
+  </footer>
 
 
 

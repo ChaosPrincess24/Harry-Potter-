@@ -5,13 +5,23 @@
 
 body {
   background-color: #0e1a40;
-  font-family: Harry;
-  color: white;
-}
+    background-position: center;
+    display: flex;
+    font-family: Harry;
+    font-size: xx-large;
+    text-align: center;
+    flex-direction: column;
+    flex: 100vh;
+    margin: 0;
+  }
 
 h1 {
   font-family: Harry;
   text-align: center;
+}
+
+.nav{
+  display: inline-flex;
 }
 
 p {

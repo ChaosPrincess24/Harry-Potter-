@@ -4,10 +4,11 @@
 }
 
 body {
-  /* background-image: url("./Pictures/background.jpg");*/
   background-color: black;
   background-position: center;
   display: flex;
+  font-family: Harry;
+  font-size: xx-large;
   flex-direction: column;
   flex: 100vh;
   margin: 0;
@@ -16,10 +17,24 @@ body {
 .btn.btn-primary {
   background: transparent;
   border: none;
+  width: 200px;
+  height: auto;
 }
 
-.topnav {
-  position: relative;
+.btn-primary {
+  color: transparent;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.banner {
+  display: inline-block;
 }
 
 .modal-dialog {
@@ -30,16 +45,10 @@ body {
   position: relative;
 }
 
-img {
+img-fluid {
   max-width: 100%;
-  height: auto;
-}
-
-.nav {
-  background-color: black;
-  text-align: center;
-  font-family: Harry;
-  font-size: xx-large;
+  height: 200px;
+  width: auto;
 }
 
 h1 {
