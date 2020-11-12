@@ -4,11 +4,10 @@
 }
 
 body {
-  background-color: black;
+  background-color:darkred;
   background-position: center;
   display: flex;
   font-family: Harry;
-  font-size: xx-large;
   text-align: center;
   flex-direction: column;
   flex: 100vh;
