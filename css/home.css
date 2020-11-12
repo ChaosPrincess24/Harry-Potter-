@@ -35,7 +35,6 @@ iframe[seamless] {
 .btn.btn-primary {
   background: transparent;
   border: none;
-  width: 200px;
   height: auto;
 }
 
@@ -60,6 +59,11 @@ iframe{
   align-items: center;
   position: relative;
   border-radius: 10px;
+}
+
+.tr{
+  align-content: center;
+  text-align: center;
 }
 
 .modal-dialog {
@@ -139,8 +143,6 @@ h5{
   all: unset;
   cursor: pointer;
   width: 250px;
-  -webkit-appearance: none;
-  outline: none !important;
 }
 
 .btn-sorting-hat > img {
@@ -152,4 +154,3 @@ h5{
 
 .btn-sorting-hat:hover > img {
   transform: scale(1.1);
-}
