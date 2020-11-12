@@ -111,8 +111,9 @@ input[type=email] {
 }
 
 iframe{
-  align-items: center;
-  position: relative;
+  /* left: 30%; */
+  /* align-items: center; */
+  /* position: relative; */
   border-radius: 10px;
 }
 
