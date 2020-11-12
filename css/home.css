@@ -134,3 +134,20 @@ h5{
 .Slytherin {
   color: green;
 }
+
+.btn-sorting-hat {
+  all: unset;
+  cursor: pointer;
+  width: 250px;
+}
+
+.btn-sorting-hat > img {
+  width: 100%;
+  height: auto;
+  transition: all 500ms;
+  margin-bottom: 20px;
+}
+
+.btn-sorting-hat:hover > img {
+  transform: scale(1.1);
+}
