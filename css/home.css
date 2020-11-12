@@ -8,10 +8,14 @@ body {
   background-position: center;
   display: flex;
   font-family: Harry;
-  font-size: xx-large;
   flex-direction: column;
   flex: 100vh;
   margin: 0;
+}
+
+.nav{
+  font-weight: bolder;
+  font-size: xx-large;
 }
 
 .button{
