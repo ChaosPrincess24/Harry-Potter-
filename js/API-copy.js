@@ -43,7 +43,7 @@ function displaySortingHatAnswer(house) {
     modalBody.text(house);
 }
 
-<script>
+/*<script>
 function validateForm(){
 	var name = document.forms["myForm"]["your-name"].value;
 	var email = document.forms["myForm"]["your-email"].value;
@@ -67,4 +67,4 @@ function validateForm(){
     }   
 
 }
-</script>
+</script>*/
