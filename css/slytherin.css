@@ -8,15 +8,40 @@ body {
   background-position: center;
   display: flex;
   font-family: Harry;
-  font-size: xx-large;
   text-align: center;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   flex: 100vh;
   margin: 0;
 }
 
-.banner{
-  height: max-content;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:grey;
+
+}
+
+li {
+  float: left;
+  text-align: center;
+  font-size: xx-large;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a{
+  font-size: xx-large;
+  line-height: 50p;
 }
 
 h1 {
@@ -26,6 +51,7 @@ text-align: center;
 
 .nav{
 display: inline-flex;
+justify-content: space-around;
 }
 
 p {
@@ -50,3 +76,4 @@ p {
 .Slytherin {
   color: green;
 }
+
