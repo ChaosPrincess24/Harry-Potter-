@@ -57,6 +57,31 @@
     </button>
     </div>
 
+    <form name="myForm" method="post" onsubmit="return validateForm()">
+        <div class="form-group">
+            <h1>Contact Dumbledore</h1>
+        </div>
+        <div class="form-group">
+            <label>Your Name</label> <span id="error-name"></span>
+            <input type="text" name="your-name" class="form-control" placeholder="Enter your Name">
+        </div>
+        <div class="form-group"> 
+            <label>Your Email</label> <span id="error-email"></span>
+            <input type="email" name="your-email" class="form-control" placeholder="Enter your Email">
+        </div>
+        <div class="form-group">
+            <label>Your Phone</label> <span id="error-phone"></span>
+            <input type="text" name="your-phone" class="form-control" placeholder="Enter your Phone">
+        </div>
+        <div class="form-group">
+            <label>Your Message</label> <span id="error-message"></span>
+            <textarea name="your-message" class="form-control" rows="10" placeholder="Enter your Message"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Send">
+        </div>
+    </form>
+
     <footer>
       <div class="d-flex justify-content-center align-items-center">
           <a class="d-block" href="https://twitter.com/HarryPotterFilm">
@@ -68,7 +93,7 @@
           <a class="d-block" href="https://www.instagram.com/harrypotterfilm/">
               <img class="img-fluid" src='./css/Pictures/iconfinder_social_media_applications_3-instagram_4102579.png' /></a>
           <a class="d-block" href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ">
-              <img class="img-fluid" src='./css/Pictures/iconfinder_Youtube_1298778.png' /></a>
+              <img class="img-fluid" src='./css/Pictures/youtube (2).png' /></a>
       </div>
   </footer>
 
