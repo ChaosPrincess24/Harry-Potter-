@@ -139,6 +139,8 @@ h5{
   all: unset;
   cursor: pointer;
   width: 250px;
+  -webkit-appearance: none;
+  outline: none !important;
 }
 
 .btn-sorting-hat > img {
