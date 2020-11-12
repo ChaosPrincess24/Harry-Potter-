@@ -21,11 +21,13 @@ text-align: center;
 }
 
 .nav{
+  font-size: large;
 display: inline-flex;
 }
 
 .header {
   display: inline-block;
+  font-size: large;
 }
 
 .modal-dialog {
