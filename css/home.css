@@ -13,39 +13,6 @@ body {
   margin: 10;
 }
 
-.header {
-  display: inline-block;
-}
-
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-
-}
-
-li {
-  float: left;
-  text-align: center;
-  font-size: xx-large;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-a{
-  font-size: xx-large;
-  line-height: 50p;
-}
-
 .card{
   margin: 10px;
   background-color: black;
@@ -63,33 +30,6 @@ iframe[seamless] {
 .form-group{
   width: 200px;
   align-content: center;
-}
-
-.form{
-  background-color: black;
-  color: silver;
-  padding: 20px;
-  border-radius: 20px;
-}
-
-.form-control{
-  border: silver;
-}
-
-input[type=text] {
-  border: 2px solid silver;
-  border-radius: 4px;
-}
-
-input[type=email] {
-  border: 2px solid silver;
-  border-radius: 4px;
-}
-
-.btn.submit{
-  align-content: center;
-  background-color:silver;
-  color: black;
 }
 
 .btn.btn-primary {
@@ -110,16 +50,34 @@ input[type=email] {
   border: none;
 }
 
+.banner {
+  display: inline-block;
+}
+
 iframe{
+<<<<<<< HEAD
   /* left: 30%; */
   /* align-items: center; */
   /* position: relative; */
+=======
+  left: 30%;
+  align-items: center;
+  position: relative;
+>>>>>>> parent of 81f41c0... home page and nav bar changes
   border-radius: 10px;
 }
 
-table{
+.tr{
+  align-content: center;
   text-align: center;
-  color: silver;
+}
+
+.modal-dialog {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+  text-align: center;
+  position: relative;
 }
 
 .img-fluid {
@@ -131,23 +89,6 @@ table{
 
 h1 {
   font-family: Harry;
-  text-align: center;
-}
-
-.Gryffindor {
-  color: darkred;
-}
-
-.Hufflepuff {
-  color: gold;
-}
-
-.Ravenclaw {
-  color: navy;
-}
-
-.Slytherin {
-  color: green;
 }
 
 p {
@@ -178,26 +119,36 @@ p {
   border: none;
 }
 
-.modal-dialog {
-  -webkit-border-radius: 0px !important;
-  -moz-border-radius: 0px !important;
-  border-radius: 0px !important;
-  text-align: center;
-  position: relative;
-}
-
 .btn.btn-secondary {
   color: white;
   float: right;
   background-color: black;
 }
 
-/*hat button*/
+h5{
+  display: inline;
+}
+
+.Gryffindor {
+  color: darkred;
+}
+
+.Hufflepuff {
+  color: gold;
+}
+
+.Ravenclaw {
+  color: navy;
+}
+
+.Slytherin {
+  color: green;
+}
+
 .btn-sorting-hat {
   all: unset;
   cursor: pointer;
   width: 250px;
-  
 }
 
 .btn-sorting-hat > img {
@@ -208,24 +159,5 @@ p {
 }
 
 .btn-sorting-hat:hover > img {
-  transform: scale(1.4);
-}
-
-/*spell button*/
-
-.btn-spell {
-  all: unset;
-  cursor: pointer;
-  width: 250px;
-}
-
-.btn-spell > img {
-  width: 100%;
-  height: auto;
-  transition: all 500ms;
-  margin-bottom: 20px;
-}
-
-.btn-spell:hover > img {
-  transform: scale(1.4);
+  transform: scale(1.1);
 }
