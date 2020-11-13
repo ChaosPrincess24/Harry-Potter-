@@ -9,39 +9,10 @@ body {
   display: flex;
   font-family: Harry;
   text-align: center;
-  align-items: center;
   justify-content: space-between;
   flex-direction: column;
   flex: 100vh;
   margin: 0;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: goldenrod;
-
-}
-
-li {
-  float: left;
-  text-align: center;
-  font-size: xx-large;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-a{
-  font-size: xx-large;
-  line-height: 50p;
 }
 
 h1 {
@@ -50,8 +21,21 @@ text-align: center;
 }
 
 .nav{
+  font-size: large;
 display: inline-flex;
-justify-content: space-around;
+}
+
+.header {
+  display: inline-block;
+  font-size: large;
+}
+
+.modal-dialog {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+  text-align: center;
+  position: relative;
 }
 
 p {
