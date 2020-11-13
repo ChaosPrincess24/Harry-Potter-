@@ -22,16 +22,16 @@ function getSortingHat() {
         
         var modalContent = document.querySelector('.modal-content')
         if (house === 'Slytherin') {
-            modalContent.style.backgroundColor = "green";
+            modalContent.style.backgroundColor = "#1a472a";
         }
         else if (house === 'Hufflepuff') {
-            modalContent.style.backgroundColor = "gold";
+            modalContent.style.backgroundColor = "#ecb939";
         }
         else if (house === 'Gryffindor') {
             modalContent.style.backgroundColor = "darkred";
         }
         else if (house === 'Ravenclaw') {
-            modalContent.style.backgroundColor = "navy";
+            modalContent.style.backgroundColor = "#0e1a40";
         }
         displaySortingHatAnswer(house);
     });

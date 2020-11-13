@@ -5,14 +5,21 @@
 
 body {
   background-color: #0e1a40;
-    background-position: center;
-    display: flex;
-    font-family: Harry;
-    text-align: center;
-    flex-direction: column;
-    flex: 100vh;
-    margin: 0;
-  }
+  background-position: center;
+  display: flex;
+  font-family: Harry;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 100vh;
+  margin: 0;
+}
+
+a{
+  font-size: xx-large;
+  line-height: 50p;
+}
 
 h1 {
   font-family: Harry;
@@ -21,6 +28,7 @@ h1 {
 
 .nav{
   display: inline-flex;
+justify-content: space-around;
 }
 
 p {
@@ -38,7 +46,7 @@ p {
 }
 
 .Ravenclaw {
-  color: navy;
+  color: black;
 }
 
 .Slytherin {

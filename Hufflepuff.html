@@ -26,6 +26,33 @@
         </nav>
     </header>
 
+     <!-- The grid: four columns -->
+<div class="row">
+    <div class="column">
+      <img src="./css/Pictures/download (1)49.jpg" alt="Nature" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="./css/Pictures/download (1)4564.jpg" alt="Snow" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="./css/Pictures/download.jpg" alt="Mountains" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="./css/Pictures/22.jpg" alt="Lights" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
 
     <h1>History</h1>
     <p>Hufflepuff is one of the four Houses of Hogwarts School of Witchcraft and Wizardry.
