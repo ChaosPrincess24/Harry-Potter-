@@ -43,28 +43,25 @@ function displaySortingHatAnswer(house) {
     modalBody.text(house);
 }
 
-/*<script>
-function validateForm(){
-	var name = document.forms["myForm"]["your-name"].value;
-	var email = document.forms["myForm"]["your-email"].value;
-	var phone = document.forms["myForm"]["your-phone"].value;
-	var message = document.forms["myForm"]["your-message"].value;
+function getSpells() {
+    var resourceUrl = formResourcePath(spellsPath);
+    getResourceFromAPI(resourceUrl).then(function(spell) {
+      alert(spell)
+        displaygetSpells(spell);
+    });
+  }
+  
+  function display(spell) {
+    $('#spellModal').modal('show');
+    var modalBody = $('.modal-body');
+    modalBody.text(spell);
+  }
 
-	if (name.length<2) {
-        document.getElementById('error-name').innerHTML = " Please Enter Your Name *"
-    }
-    if (email.length<2) {
-        document.getElementById('error-email').innerHTML = " Please Enter Your Email *";
-    }
-    if (phone.length<10) {
-        document.getElementById('error-phone').innerHTML = " Please Enter Your Phone *";      
-    }
-    if (message.length<2) {
-        document.getElementById('error-message').innerHTML = " Please Enter Your Message *";
-    }          
-    if(name.length<2 || email.length<2 || phone.length<10 || message.length<2){
-       	return false;
-    }   
 
-}
-</script>*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    var url = new URL(window.location.href);
+    if( url.searchParams.has('name')) {
+        alert('Thank you ' + url.searchParams.get('name') + 'for contacting Hogwarts.');
+    }
+})

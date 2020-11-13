@@ -4,9 +4,12 @@
 
 <head>
     <meta charset="utf-8">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/ravenclaw.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Ravenclaw</title>
     <audio autoplay>
         <source src="css/Sound/Ravenclaw.mpeg"></audio>
@@ -26,27 +29,28 @@
         </nav>
     </header>
 
-     <!-- The grid: four columns -->
-<div class="row">
-    <div class="column">
-      <img src="./css/Pictures/5.jpg" alt="Nature" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="./css/Pictures/22c09b9cb3c330349510aee9bbebed7c.jpg" alt="Snow" onclick="myFunction(this);">
-    </div>
-  </div>
-  
-  <!-- The expanding image container -->
-  <div class="container">
-    <!-- Close the image -->
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  
-    <!-- Expanded image -->
-    <img id="expandedImg" style="width:100%">
-  
-    <!-- Image text -->
-    <div id="imgtext"></div>
-  </div>
+    <div class="container-fluid">
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="./css/Pictures/5.jpg"/></div>
+              <div class="swiper-slide"><img src="./css/Pictures/22c09b9cb3c330349510aee9bbebed7c.jpg"/></div>
+              <div class="swiper-slide"><img src="./css/Pictures/25.jpg"/></div>
+              <div class="swiper-slide"><img src="./css/Pictures/RowenRavenclaw.jpg"/></div>
+            </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+      
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+      </div>
+      </div>
+    
 
     <h1>History</h1>
     <p>Ravenclaw is one of the four Houses of Hogwarts School of Witchcraft and Wizardry.
@@ -127,4 +131,12 @@
         Gryffindor. Hermione Granger was also considered for Ravenclaw due to her intelligence, but the hat
         ultimately decided on Gryffindor once again. Filius Flitwick was in the same situation at the time of his
         Sorting, but in his case the Hat decided on Ravenclaw instead of Gryffindor.</p>
+
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              autoHeight: true,
+            }) 
+          </script>
+      
+        <script src="js/API.js"></script>
 </body>

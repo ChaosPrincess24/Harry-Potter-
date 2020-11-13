@@ -24,6 +24,12 @@ a{
   color: silver;
 }
 
+.btn.btn-success.submit{
+  background-color:silver;
+  color: black;
+  border: silver;
+}
+
 iframe:focus {
   outline: none;
 }
@@ -32,9 +38,13 @@ iframe[seamless] {
   display: block;
 }
 
-.form-group{
+.form{
   width: 200px;
   align-content: center;
+  background-color: black;
+  color: silver;
+  border: 10px;
+  border-color: red;
 }
 
 .btn.btn-primary {

@@ -16,16 +16,16 @@
 <body>
     <header>
         <nav>
-          <div class="banner">
-            <img src="css/Pictures/harrypotterlogo.png" height="200px" />
-          </div>
-          <a href="Home.html">Hogwarts</a>
-          <a href="Gryffindor.html" class="Gryffindor">Gryffindor</a>
-          <a href="Hufflepuff.html" class="Hufflepuff">Hufflepuff</a>
-          <a href="Ravenclaw.html" class="Ravenclaw">Ravenclaw</a>
-          <a href="Slytherin.html" class="Slytherin">Slytherin</a>
+            <div class="banner">
+                <img src="css/Pictures/harrypotterlogo.png" height="200px" />
+            </div>
+            <a href="Home.html">Hogwarts</a>
+            <a href="Gryffindor.html" class="Gryffindor">Gryffindor</a>
+            <a href="Hufflepuff.html" class="Hufflepuff">Hufflepuff</a>
+            <a href="Ravenclaw.html" class="Ravenclaw">Ravenclaw</a>
+            <a href="Slytherin.html" class="Slytherin">Slytherin</a>
         </nav>
-      </header>
+    </header>
 
     <div class="container-fluid">
         <div class="row justify-content-center">
@@ -35,11 +35,11 @@
                 <h5>and the</h5>
                 <h3>Army of Darkness</h3>
                 <div>
-                    <iframe width="1120" height="630" src="https://www.youtube.com/embed/4sorhZeUJm4" frameborder="10" 
-                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="1120" height="630" src="https://www.youtube.com/embed/4sorhZeUJm4" frameborder="10"
+                        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
-               
+<h1 class="justify-content-center">Where in the Wizarding World am I?</h1>
 
                 <div class="row">
                     <div class="col-12 col-lg-3">
@@ -69,11 +69,11 @@
                             <div class="card-body">
                                 <h5 class="card-title">Diagon Alley</h5>
                                 <p class="card-text">Diagon Alley is a cobblestoned wizarding alley and
-                                    shopping area located in London, England behind a pub called the Leaky 
-                                    Cauldron. Inside the alley is an assortment of restaurants, shops, and 
-                                    other sights. All items on the Hogwarts supply list can be bought at 
-                                    Diagon Alley. The alley is completely hidden from the Muggle world which 
-                                    is right outside of its boundaries. It is very large in area and essentially 
+                                    shopping area located in London, England behind a pub called the Leaky
+                                    Cauldron. Inside the alley is an assortment of restaurants, shops, and
+                                    other sights. All items on the Hogwarts supply list can be bought at
+                                    Diagon Alley. The alley is completely hidden from the Muggle world which
+                                    is right outside of its boundaries. It is very large in area and essentially
                                     the centre of wizarding London
                                 </p>
                             </div>
@@ -127,7 +127,8 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <h1 class="justify-content-center">What house do you belong to?</h1>
                 <div class="d-flex justify-content-center">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn-sorting-hat" onclick="getSortingHat()">
@@ -135,6 +136,7 @@
                     </button>
                 </div>
 
+                <h1 class="justify-content-center">What spell would the Dark Lord cast on you?</h1>
                 <div class="d-flex justify-content-center">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn-spells" onclick="getSpells()">
@@ -143,19 +145,22 @@
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <form action="./Submit.html" class="form">
+                    <div class="form">
+                    <form action="./Home.html">
+                        <h2>Contact Hogwarts</h2>
                         <div class="form-group">
                             <label for="">Name</label>
                             <input type="text" class="form-control" name="name" id="Example" aria-describedby="helpId"
-                                placeholder="Harry Potter">
+                                placeholder="Harry Potter" required>
                         </div>
                         <div class="form-group">
                             <label for="">Email</label>
-                            <input type="text" class="form-control" name="email" id="Example" aria-describedby="helpId"
-                                placeholder="harry@potter.com">
+                            <input type="email" class="form-control" name="email" id="Email" aria-describedby="helpId"
+                                placeholder="harry@potter.com" required>
                         </div>
                         <button class="btn btn-success submit" type="submit">Submit</button>
                     </form>
+                    </div>
                 </div>
 
 
@@ -229,7 +234,7 @@
                     crossorigin="anonymous"></script>
 
                 <script src="js/API-copy.js"></script>
-                <!-- <script src="js/Main.js"></script>-->
+                <!-- <script src="js/Main.js"></script> -->
 
 
 </body>

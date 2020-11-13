@@ -4,9 +4,12 @@
 
 <head>
     <meta charset="utf-8">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/slytherin.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Slytherin</title>
     <audio autoplay>
         <source src="css/Sound/Slytherin.mpeg"></audio>
@@ -26,36 +29,30 @@
         </nav>
     </header>
 
-    <!-- The grid: four columns -->
-<div class="row">
-    <div class="column">
-      <img src="./css/Pictures/SalazarSlytherin.jpg" alt="Nature" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="./css/Pictures/SlytherinCommonRoom.jpg" alt="Snow" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="/css/Pictures/spride.jpg" alt="Mountains" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-      <img src="./css/Pictures/Slyerine.jpg" alt="Lights" onclick="myFunction(this);">
-    </div>
-    <div class="column">
-        <img src="./css/Pictures/99.jpg" alt="Lights" onclick="myFunction(this);">
+    <div class="container-fluid">
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="./css/Pictures/88.jpg"/></div>
+              <div class="swiper-slide"><img src="./css/Pictures/99.jpg"/></div>
+              <div class="swiper-slide"><img src="./css/Pictures/88099.jpg"/></div>
+              <div class="swiper-slide"><img src="./css/Pictures/SalazarSlytherin.jpg"/></div>
+              <div class="swiper-slide"><img src="./css/Pictures/Slyerine(1).jpg"/></div>
+              <div class="swiper-slide"><img src="./css/Pictures/SlytherinCommonRoom.jpg"/></div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+      
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
       </div>
-  </div>
-  
-  <!-- The expanding image container -->
-  <div class="container">
-    <!-- Close the image -->
-    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  
-    <!-- Expanded image -->
-    <img id="expandedImg" style="width:100%">
-  
-    <!-- Image text -->
-    <div id="imgtext"></div>
-  </div>
+      </div>
+    
 
     <h1>History</h1>
     <p>Slytherin is one of the four Houses at Hogwarts School of Witchcraft and Wizardry,
@@ -153,4 +150,12 @@
         therefore wouldn't have been sorted into Slytherin at all, she was a descendant of Slytherin
         himself and fit the pattern of those sorted into his house, as she held deep and unreturned
         feelings for Tom Riddle Snr, who often travelled by her house on his carriage.</p>
+
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              autoHeight: true,
+            }) 
+          </script>
+      
+        <script src="js/API.js"></script>
 </body>

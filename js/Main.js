@@ -24,6 +24,7 @@ async function getResourceFromAPI() {
 function getSpells() {
   var resourceUrl = formResourcePath(spellsPath);
   getResourceFromAPI(resourceUrl).then(function(spell) {
+    alert
       displaygetSpells(spell);
   });
 }
